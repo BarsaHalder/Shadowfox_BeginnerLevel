@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barsa Halder | Full-Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">B.<span>Verse</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">Full-Stack Software Engineer</span>
+                <h1>Crafting Scalable Web apps & User-focused Digital Experiences</h1>
+                <p>Hi, I'm Barsa Halder a full-stack developer bridging sleek front-end interfaces with robust Node.js and Express backends.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>My background, tech stack experience, and development philosophy.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-details" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h3>End-to-End Application Architecture</h3>
+                    <p>I specialize in building complete web ecosystems from database design and RESTful API development down to responsive, high-performance user interfaces. Passionate about clean code, performance optimization, and seamless user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills & Tools</h2>
+                <p>Technologies used across the full software stack.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, Responsive Design</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Backend & APIs</h3>
+                    <p>Node.js, Express.js, RESTful Architecture, API Integration, Python</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Database & DevOps</h3>
+                    <p>MongoDB, PostgreSQL, Git / GitHub, Postman, Vercel / Netlify</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects (Fetched via API)</h2>
+                <p>Data retrieved dynamically via GET request from the Express backend.</p>
+            </div>
+            <div class="projects-grid" id="projectsContainer">
+                <p style="text-align: center; color: var(--text-muted); grid-column: span 3;">Loading projects from server...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Send a message—validated and processed directly through the backend server.</p>
+            </div>
+            <div class="contact-wrapper" style="max-width: 700px; margin: 0 auto;">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Internship Opportunity">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message to Backend</button>
+                    <div id="formResponse" class="response-box" style="display:none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Barsa Halder. Full-Stack Developer Portfolio Task.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
